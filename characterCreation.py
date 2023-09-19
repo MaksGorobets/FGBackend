@@ -1,5 +1,6 @@
 import random
 from faker import Faker
+import json
 
 
 class Character:

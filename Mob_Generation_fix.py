@@ -1,5 +1,6 @@
 import random
-from characterCreation import *
+from characterCreation import character1
+import json
 
 
 class Mob:
