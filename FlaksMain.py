@@ -8,6 +8,12 @@ import json
 
 app = Flask(__name__, template_folder="templates")
 
+@app.route('/init', methods=['POST'])
+def restart():
+    character1.__init__()
+    character2.__init__()
+    return jsonify({"message": "Characters have been restarted."})
+
 @app.route('/character1')
 def c1():
     jsoncharacter1 = json.dumps(character1.__dict__)

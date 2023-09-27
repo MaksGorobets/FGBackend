@@ -14,7 +14,7 @@ class Mob:
         self.attack = random.randint(2, 7)
         self.luck = random.randint(1, 10)
         self.alive = True
-        self.critical_attack = self.attack * 1.5 if self.luck > 5 else self.attack
+        self.critical_attack = self.attack * 2 if self.luck > 5 else self.attack
 
     def take_damage(self, damage):
         actual_damage = max(damage - self.armor, 0)
